@@ -22,8 +22,6 @@ const Header = () => {
           {/* Fallback text logo (hidden by default) */}
           <div className="h-16 flex items-center">
             <span className="text-3xl font-bold">
-              <span className="text-red-700">QIC</span>
-              <span className="text-gray-800"> Insurance</span>
             </span>
           </div>
         </div>
