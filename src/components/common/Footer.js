@@ -1,5 +1,12 @@
 // src/components/common/Footer.js
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faFacebookF, 
+  faTwitter, 
+  faLinkedinIn, 
+  faInstagram 
+} from '@fortawesome/free-brands-svg-icons';
 // Import with explicit .js extension
 import FooterLink from './FooterLink.js';
 
@@ -39,16 +46,16 @@ const Footer = () => {
             <h4 className="text-white font-semibold text-lg mb-4">Connect with Us</h4>
             <div className="flex space-x-4 mb-4">
               <a href="https://facebook.com/qicinsurance" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-700 transition duration-300">
-                <i className="fab fa-facebook-f"></i>
+                <FontAwesomeIcon icon={faFacebookF} />
               </a>
               <a href="https://twitter.com/qicinsurance" aria-label="Twitter" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-700 transition duration-300">
-                <i className="fab fa-twitter"></i>
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a href="https://linkedin.com/company/qicinsurance" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-700 transition duration-300">
-                <i className="fab fa-linkedin-in"></i>
+                <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
               <a href="https://instagram.com/qicinsurance" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-700 transition duration-300">
-                <i className="fab fa-instagram"></i>
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
             <div>

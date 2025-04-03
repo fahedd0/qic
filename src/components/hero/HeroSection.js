@@ -1,20 +1,19 @@
+// src/components/hero/HeroSection.js
 import React from 'react';
 
-const HeroSection = () => {
-  // Define handlers explicitly
-  const handleGetQuote = () => {
+function HeroSection() {
+  function handleGetQuote() {
+    window.alert("Get a Quote button clicked");
     console.log("Get a Quote button clicked");
-    alert("Get a Quote button clicked"); // This will show a visible alert
-  };
+  }
 
-  const handleExplorePlans = () => {
+  function handleExplorePlans() {
+    window.alert("Explore Plans button clicked");
     console.log("Explore Plans button clicked");
-    alert("Explore Plans button clicked"); // This will show a visible alert
-  };
+  }
 
   return (
     <section className="relative bg-gradient-to-r from-blue-100 to-red-50 overflow-hidden">
-      <div className="absolute inset-0 bg-pattern opacity-10"></div>
       <div className="container mx-auto px-4 py-20 md:py-28">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -25,14 +24,12 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <button 
-              type="button"
               className="px-6 py-3 bg-red-700 text-white font-medium rounded-lg hover:bg-red-800 transition duration-300 shadow-md"
               onClick={handleGetQuote}
             >
               Get a Quote
             </button>
             <button 
-              type="button"
               className="px-6 py-3 bg-white border-2 border-red-700 text-red-700 font-medium rounded-lg hover:bg-red-50 transition duration-300 shadow-md"
               onClick={handleExplorePlans}
             >
@@ -43,6 +40,6 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
+}
 
 export default HeroSection;
